@@ -1,6 +1,6 @@
 {
   "name": "yantodolist",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A cross-platform to-do list application",
   "main": "main.js",
   "scripts": {
