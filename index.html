@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>YanToDoList</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>YanToDoList</h1>
+
+      <div class="add-todo">
+        <input type="text" id="new-todo" placeholder="Add a new task..." />
+        <input type="date" id="due-date" />
+        <div class="school-checkbox-container">
+          <input type="checkbox" id="is-for-school" />
+          <label for="is-for-school">For School</label>
+        </div>
+        <button id="add-button">Add</button>
+      </div>
+
+      <ul id="todo-list"></ul>
+
+      <div class="bottom-bar">
+        <button id="random-todo-button">Random Todo</button>
+      </div>
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>

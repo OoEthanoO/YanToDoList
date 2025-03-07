@@ -1,0 +1,185 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+.add-todo {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+#new-todo {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+}
+
+#add-button {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#add-button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+li span {
+  flex-grow: 1;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+#due-date {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-left: none;
+  font-size: 16px;
+}
+
+.due-date {
+  margin-left: 10px;
+  color: #777;
+  font-size: 0.85em;
+  margin-right: 10px;
+}
+
+li.completed .due-date {
+  color: #aaa;
+}
+
+.school-checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  white-space: nowrap;
+}
+
+.school-checkbox-container label {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.school-task {
+  color: #e74c3c !important;
+  font-weight: 500;
+}
+
+li.completed .school-task {
+  color: #e57373 !important;
+}
+
+.drag-handle {
+  cursor: grab;
+  padding: 0 10px 0 5px;
+  color: #aaa;
+  font-size: 18px;
+  user-select: none;
+}
+
+li.dragging {
+  opacity: 0.5;
+  border: 1px dashed #aaa;
+}
+
+li.drag-over {
+  border-top: 2px solid #4caf50;
+}
+
+li:hover {
+  background-color: #f9f9f9;
+}
+
+li:hover .drag-handle {
+  color: #666;
+}
+
+.done-today-checkbox {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.bottom-bar {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+}
+
+#random-todo-button {
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+#random-todo-button:hover {
+  background-color: #2980b9;
+}
